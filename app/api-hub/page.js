@@ -20,7 +20,7 @@ import {
 export default function ApiHubPage() {
   const [copiedIndex, setCopiedIndex] = useState(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
-  const origin = 'https://footylive.vercel.app';
+  const origin = 'https://krsnlive.vercel.app';
 
   const copyToClipboard = (text, index) => {
     navigator.clipboard.writeText(text);
