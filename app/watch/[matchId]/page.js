@@ -57,16 +57,18 @@ export default async function WatchPage({ params, searchParams }) {
     };
   }
 
-  const dateStr = new Date(match.timestamp).toLocaleDateString([], {
-    weekday: 'short',
-    month: 'short',
-    day: 'numeric',
-  });
+  const dateStr = new Date(match.timestamp).toLocaleDateString('id-ID', {
+  weekday: 'short',
+  month: 'short',
+  day: 'numeric',
+  timeZone: 'Asia/Jakarta',
+});
 
-  const timeStr = new Date(match.timestamp).toLocaleTimeString([], {
-    hour: '2-digit',
-    minute: '2-digit',
-  });
+const timeStr = new Date(match.timestamp).toLocaleTimeString('id-ID', {
+  hour: '2-digit',
+  minute: '2-digit',
+  timeZone: 'Asia/Jakarta',
+});
 
   const boxscore = stats?.boxscore;
   const teamStats = boxscore?.teams || [];
