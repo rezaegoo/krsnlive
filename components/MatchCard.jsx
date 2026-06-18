@@ -75,7 +75,7 @@ export default function MatchCard({ match, tab }) {
   const currentMinute = liveMinute || (liveMinuteNumber ? `${liveMinuteNumber}'` : '');
   const timeStr = status === 'live'
     ? (currentMinute ? `${currentMinute}` : 'LIVE')
-    : new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    : new Date(timestamp).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jakarta' });
 
   const timeLeft = status === 'upcoming' ? getTimeLeft(timestamp) : '';
   const isMatchFavorited = homeFav || awayFav;
