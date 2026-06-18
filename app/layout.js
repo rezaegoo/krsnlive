@@ -3,8 +3,8 @@ import ThemeToggle from '@/components/ThemeToggle';
 import { Database } from 'lucide-react';
 
 export const metadata = {
-  title: 'FootyLive — Live Football Streams',
-  description: 'Watch live football matches free on FootyLive. Real-time scores and premium ad-free streams.',
+  title: 'KRSNLive — Live Football Streams',
+  description: 'Watch live football matches free on KRSNLive. Real-time scores and premium ad-free streams.',
 };
 
 export const viewport = {
@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="text-[16px] font-bold tracking-tight text-zinc-900 dark:text-white group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">FootyLive</span>
+                <span className="text-[16px] font-bold tracking-tight text-zinc-900 dark:text-white group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">KRSNLive</span>
                 <span className="text-[10px] text-zinc-500 dark:text-zinc-500 font-medium -mt-1 tracking-wider uppercase">Premium streams</span>
               </div>
             </a>
@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
         {/* Beautiful Simple Footer */}
         <footer className="relative z-10 border-t border-zinc-200 dark:border-zinc-900/60 py-8 px-4 bg-white/60 dark:bg-[#040405]/90 transition-all duration-300 flex justify-center w-full">
           <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left text-xs text-zinc-500 dark:text-zinc-600 px-4">
-            <p>© {new Date().getFullYear()} FootyLive. All streaming sources are aggregated from third-party networks for validation purposes.</p>
+            <p>© {new Date().getFullYear()} KRSNLive. All streaming sources are aggregated from third-party networks for validation purposes.</p>
             <div className="flex items-center gap-3 shrink-0">
               <a 
                 href="/api-hub" 
